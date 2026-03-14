@@ -1,0 +1,28 @@
+.sidebar {
+  width: 220px;
+  background: #2d2d3a;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  padding: 12px 24px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s, color 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.nav-link:hover {
+  background: #3a3a4a;
+  color: white;
+}
+
+.nav-link.active {
+  background: #3a3a4a;
+  color: white;
+  border-left: 3px solid #7c3aed;
+}
