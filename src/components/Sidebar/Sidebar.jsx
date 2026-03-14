@@ -1,18 +1,22 @@
 import { NavLink } from 'react-router-dom'
 import './Sidebar.css'
 
+const navItems = [
+  { path: '/', label: 'Home', end: true },
+  { path: '/dashboard', label: 'Dashboard', end: false },
+  { path: '/about', label: 'About', end: false },
+];
+
 function Sidebar() {
+  const getClassName = ({ isActive }) => isActive ? 'nav-link active' : 'nav-link';
   return (
     <nav className="sidebar">
-      <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-        Home
-      </NavLink>
-      <NavLink to="/dashboard" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-        Dashboard
-      </NavLink>
-      <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-        About
-      </NavLink>
+      {navItems.map((item) => (
+        <NavLink key={item.path} className={getClassName} to={item.path} end={item.end}>
+          {item.label}
+        </NavLink>
+      ))
+      }
     </nav>
   )
 }
