@@ -4,6 +4,7 @@ import './Sidebar.css'
 const navItems = [
   { path: '/', label: 'Home', end: true },
   { path: '/dashboard', label: 'Dashboard', end: false },
+  { path: '/tasks', label: 'Tasks', end: false },
   { path: '/about', label: 'About', end: false },
 ];
 
