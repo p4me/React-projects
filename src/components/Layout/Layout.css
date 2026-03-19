@@ -1,0 +1,25 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background: #f0f0f5;
+  color: #213547;
+  transition: background 0.3s, color 0.3s;
+}
+
+.main-content[data-theme="dark"] {
+  background: #1a1a2e;
+  color: #e2e8f0;
+}
