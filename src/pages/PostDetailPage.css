@@ -1,0 +1,44 @@
+.post-detail {
+  max-width: 620px;
+}
+
+.btn-back {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: inherit;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.btn-back:hover {
+  background: #f3f4f6;
+}
+
+.post-detail-concept {
+  color: #7c3aed;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.post-detail h2 {
+  text-transform: capitalize;
+  margin-top: 0;
+  color: #1e1e2e;
+}
+
+.post-body {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #374151;
+  background: white;
+  padding: 20px 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.status-msg { color: #555; }
+.status-msg.error { color: #dc2626; }

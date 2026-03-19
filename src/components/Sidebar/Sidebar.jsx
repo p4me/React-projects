@@ -5,6 +5,8 @@ const navItems = [
   { path: '/', label: 'Home', end: true },
   { path: '/dashboard', label: 'Dashboard', end: false },
   { path: '/tasks', label: 'Tasks', end: false },
+  { path: '/posts', label: 'Posts', end: false },
+  { path: '/timer', label: 'Timer', end: false },
   { path: '/about', label: 'About', end: false },
 ];
 

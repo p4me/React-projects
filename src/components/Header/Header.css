@@ -19,4 +19,20 @@
 .header-title {
   font-size: 15px;
   color: #aaa;
+  flex: 1;
+}
+
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 5px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
