@@ -1,0 +1,223 @@
+.datatable-page {
+  max-width: 960px;
+}
+
+.datatable-page h2 {
+  margin-top: 0;
+}
+
+.page-concept {
+  color: #7c3aed;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* ── Mode banner ──────────────────────────────────────────────────────────── */
+.mode-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  border: 2px solid transparent;
+}
+
+.mode-fast {
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+.mode-slow {
+  background: #fff7ed;
+  border-color: #fdba74;
+}
+
+.mode-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mode-info strong {
+  font-size: 15px;
+  color: #1e1e2e;
+}
+
+.mode-info span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.toggle-btn {
+  flex-shrink: 0;
+  padding: 9px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-disable { background: #fee2e2; color: #b91c1c; }
+.btn-disable:hover { background: #fecaca; }
+.btn-enable  { background: #dcfce7; color: #15803d; }
+.btn-enable:hover  { background: #bbf7d0; }
+
+/* ── Toolbar ──────────────────────────────────────────────────────────────── */
+.table-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.table-search {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #1e1e2e;
+  outline: none;
+}
+
+.table-search:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.table-count {
+  font-size: 13px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+/* ── Selected row banner ──────────────────────────────────────────────────── */
+.selected-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ede9fe;
+  border: 1px solid #c4b5fd;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #4c1d95;
+  margin-bottom: 12px;
+}
+
+.selected-banner button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #7c3aed;
+  padding: 0 4px;
+}
+
+/* ── Table scroll container ───────────────────────────────────────────────── */
+.table-scroll {
+  overflow-x: auto;
+  max-height: 480px;
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+/* ── Table ────────────────────────────────────────────────────────────────── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.data-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f9fafb;
+}
+
+.data-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.data-table th:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.sort-icon {
+  margin-left: 4px;
+  opacity: 0.35;
+  font-size: 12px;
+}
+
+.sort-icon.active {
+  opacity: 1;
+  color: #7c3aed;
+}
+
+.data-table td {
+  padding: 10px 16px;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+  background: #faf5ff;
+}
+
+.data-table tbody tr.row-selected {
+  background: #ede9fe;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* ── Explanation ──────────────────────────────────────────────────────────── */
+.explanation {
+  background: white;
+  border-left: 4px solid #7c3aed;
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.explanation h3 {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.explanation ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.9;
+}

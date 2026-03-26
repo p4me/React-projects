@@ -1,0 +1,169 @@
+.stopwatch-page {
+  max-width: 520px;
+}
+
+.stopwatch-page h2 {
+  margin-top: 0;
+}
+
+.stopwatch-concept {
+  color: #7c3aed;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+/* --- display --- */
+.stopwatch-display {
+  font-size: 72px;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 2px;
+  color: #1e1e2e;
+  margin-bottom: 24px;
+}
+
+/* --- controls --- */
+.stopwatch-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.stopwatch-controls button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.15s;
+}
+
+.stopwatch-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-start  { background: #7c3aed; color: white; }
+.btn-start:not(:disabled):hover { background: #6d28d9; }
+.btn-pause  { background: #f59e0b; color: white; }
+.btn-pause:not(:disabled):hover { background: #d97706; }
+.btn-lap    { background: #0ea5e9; color: white; }
+.btn-lap:not(:disabled):hover   { background: #0284c7; }
+.btn-reset  { background: #f3f4f6; color: #374151; }
+.btn-reset:hover { background: #e5e7eb; }
+
+/* --- laps --- */
+.stopwatch-laps {
+  background: white;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+  border: 1px solid #e5e7eb;
+}
+
+.stopwatch-laps h3 {
+  margin: 0 0 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.stopwatch-laps ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stopwatch-laps li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-variant-numeric: tabular-nums;
+  font-size: 15px;
+  color: #1e1e2e;
+}
+
+.stopwatch-laps li:last-child {
+  border-bottom: none;
+}
+
+.lap-number {
+  width: 52px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.lap-time {
+  font-weight: 600;
+}
+
+.lap-delta {
+  font-size: 13px;
+  color: #0ea5e9;
+  margin-left: auto;
+}
+
+/* --- notes --- */
+.stopwatch-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 32px;
+}
+
+.stopwatch-notes label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.notes-hint {
+  font-weight: 400;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.stopwatch-notes input {
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #1e1e2e;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.stopwatch-notes input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+/* --- explanation --- */
+.stopwatch-explanation {
+  background: white;
+  border-left: 4px solid #7c3aed;
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.stopwatch-explanation h3 {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.stopwatch-explanation ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.9;
+}

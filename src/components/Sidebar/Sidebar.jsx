@@ -7,6 +7,11 @@ const navItems = [
   { path: '/tasks', label: 'Tasks', end: false },
   { path: '/posts', label: 'Posts', end: false },
   { path: '/timer', label: 'Timer', end: false },
+  { path: '/stopwatch', label: 'Stopwatch', end: false },
+  { path: '/stopwatch-easy', label: 'StopwatchEasy', end: false },
+  { path: '/data-table', label: 'Data Table', end: false },
+  { path: '/contacts', label: 'Contacts', end: false },
+  { path: '/live-search', label: 'Live Search', end: false },
   { path: '/about', label: 'About', end: false },
 ];
 

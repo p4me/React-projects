@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth:*)",
+      "Read(//c/Users/sudsi/OneDrive/Desktop/Pooja Office/**)",
+      "Bash(npm create:*)"
+    ]
+  }
+}
