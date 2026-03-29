@@ -4,6 +4,7 @@ import Posts from "../components/Posts"
 import Exchange from "../components/Exchange"
 import ReviewTable from "../components/ReviewTable"
 import Modal from "../components/Modal"
+import ChipsList from "../components/ChipsList"
 
 function Dashboard() {
   const user = { name: 'John', age: "30" };
@@ -31,8 +32,19 @@ function Dashboard() {
       {/* <Posts /> */}
       <ReviewTable />
       <Exchange />
+      <ChipsList chips={chips} max={6}></ChipsList>
+      {/* <ChipsList ></ChipsList> */}
     </div>
   )
 }
 
+const chips = [
+  {label: 23562153},
+  {label: 23562153},
+  {label: 4543},
+  {label: 76657},
+  {label: 1213},
+  {label: 2122},
+  {label: 23562153}
+]
 export default Dashboard
